@@ -1,0 +1,25 @@
+{
+    "name": "Ubersuggest Charger by - itsuraj.com",
+    "short_name": "ubersuggestcharger",
+    "description": "Get the latest and unlimited SEO data that will help you grow your traffic directly on your Google Search results without spending a penny.",
+    "homepage_url": "https://itsuraj.com",
+    "icons": {
+        "128": "icon-128.png"
+    },
+    "version": "1.0.0",
+    "manifest_version": 2,
+    "permissions": [
+        "*://app.neilpatel.com/*"
+    ],
+    "author": "Suraj Saini",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://app.neilpatel.com/*"
+            ],
+            "js": [
+                "background.js"
+            ]
+        }
+    ]
+}
